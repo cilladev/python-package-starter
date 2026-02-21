@@ -21,18 +21,24 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
-dev = [
+test = [
     "pytest>=8.0",
     "pytest-cov>=6.0",
-    "pre-commit>=4.0",
+]
+lint = [
     "mypy>=1.13",
     "ruff>=0.8",
+]
+dev = [
+    "package-name[test,lint]",
+    "pre-commit>=4.0",
 ]
 
 [project.urls]
 Documentation = "https://github.com/username/package-name#readme"
 Issues = "https://github.com/username/package-name/issues"
 Source = "https://github.com/username/package-name"
+Changelog = "https://github.com/username/package-name/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/package_name"]
