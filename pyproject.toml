@@ -9,6 +9,7 @@ description = "A short description of the package."
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Your Name", email = "you@example.com" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -33,9 +34,12 @@ dev = [
     "package-name[test,lint]",
     "pre-commit>=4.0",
 ]
+docs = [
+    "mkdocs-material>=9.0",
+]
 
 [project.urls]
-Documentation = "https://github.com/username/package-name#readme"
+Documentation = "https://username.github.io/package-name"
 Issues = "https://github.com/username/package-name/issues"
 Source = "https://github.com/username/package-name"
 Changelog = "https://github.com/username/package-name/blob/main/CHANGELOG.md"

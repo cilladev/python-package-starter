@@ -1,0 +1,20 @@
+site_name: package-name
+site_url: https://username.github.io/package-name
+repo_url: https://github.com/username/package-name
+repo_name: username/package-name
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Usage: usage.md

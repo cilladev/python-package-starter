@@ -40,6 +40,12 @@ coverage.xml
 .DS_Store
 Thumbs.db
 
+# mkdocs
+site/
+
 # Environment
 .env
 .env.*
+
+# uv
+uv.lock

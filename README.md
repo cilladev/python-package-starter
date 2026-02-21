@@ -39,6 +39,8 @@ make install
 | `make format` | Auto-fix lint issues and format code |
 | `make test` | Run tests with pytest |
 | `make coverage` | Run tests with coverage report |
+| `make docs` | Serve docs locally (installs docs deps) |
+| `make docs-build` | Build docs with strict mode |
 | `make clean` | Remove build artifacts |
 
 ## Setup (when using this template)

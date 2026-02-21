@@ -1,4 +1,4 @@
-.PHONY: install lint format test coverage clean
+.PHONY: install lint format test coverage docs docs-build clean
 
 install:
 	test -d .venv || uv venv
@@ -20,6 +20,14 @@ test:
 coverage:
 	pytest --cov --cov-report=term-missing --cov-report=xml
 
+docs:
+	uv pip install -e ".[docs]"
+	uv run mkdocs serve
+
+docs-build:
+	uv pip install -e ".[docs]"
+	uv run mkdocs build --strict
+
 clean:
-	rm -rf build/ dist/ *.egg-info .coverage htmlcov/ coverage.xml .mypy_cache/ .ruff_cache/ .pytest_cache/
+	rm -rf build/ dist/ *.egg-info .coverage htmlcov/ coverage.xml .mypy_cache/ .ruff_cache/ .pytest_cache/ site/
 	find . -type d -name __pycache__ -exec rm -rf {} +
