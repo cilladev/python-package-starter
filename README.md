@@ -56,7 +56,7 @@ make install
 
 ## Release Checklist
 
-1. Update version in `pyproject.toml` and `src/package_name/__init__.py`
+1. Update version in `pyproject.toml`
 2. Update `CHANGELOG.md`
 3. Commit: `git commit -m "release: v0.x.0"`
 4. Tag: `git tag v0.x.0`

@@ -42,7 +42,23 @@ line-length = 88
 target-version = "py310"
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "UP", "B", "SIM", "S"]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes — unused imports, undefined names
+    "I",    # isort — import sorting
+    "UP",   # pyupgrade — modernize syntax for target python version
+    "B",    # flake8-bugbear — common bug patterns
+    "SIM",  # flake8-simplify — simplifiable logic
+    "S",    # flake8-bandit — security issues
+    "A",    # flake8-builtins — shadowing builtin names
+    "C4",   # flake8-comprehensions — unnecessary list/dict wrappers
+    "PT",   # flake8-pytest-style — pytest anti-patterns
+    "RET",  # flake8-return — unnecessary return/else logic
+    "PIE",  # flake8-pie — misc code smells (no-op, duplicate keys)
+    "T20",  # flake8-print — leftover print statements
+    "TCH",  # flake8-type-checking — move type-only imports behind TYPE_CHECKING
+    "RUF",  # ruff-specific — unused noqa, mutable defaults, ambiguous unicode
+]
 fixable = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
