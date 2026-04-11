@@ -28,7 +28,7 @@ test = [
 ]
 lint = [
     "mypy>=1.13",
-    "ruff>=0.8",
+    "ruff>=0.15.10",
 ]
 dev = [
     "package-name[test,lint]",
